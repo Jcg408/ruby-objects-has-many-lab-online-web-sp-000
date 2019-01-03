@@ -1,10 +1,19 @@
 class Artist
     @@count = 0
+<<<<<<< HEAD
     
     attr_accessor :name
     def initialize (name)
         @name = name
         @songs = []
+=======
+    @@songs = []
+    attr_accessor :name
+    def initialize (name)
+        @name = name
+        @@songs << self
+        
+>>>>>>> b0b6f73c0917d8cf87ac40b00c8a048804bd4e13
         
     end
     def songs 
